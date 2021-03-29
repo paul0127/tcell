@@ -1,3 +1,7 @@
+@import 'variables';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+
 header {
   border-top: 20px solid #679c56;
   .head {
@@ -23,11 +27,94 @@ header {
           color: #056736;
           font-weight: bold;
           font-size: 1.25rem;
-          &:hover{
+          &:hover {
             background-color: #679c56;
             color: #fff;
           }
         }
+      }
+    }
+    ul.mobile_menu {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+      width: 100%;
+      box-shadow: 0 1px 3px #dedede;
+      margin-bottom: 1rem;
+      display: none;
+      li {
+        position: relative;
+        .title {
+          border: solid 1px rgba(0, 0, 0, 0.1);
+          padding: 5px 10px;
+          border-radius: 5px;
+          font-size: 1.15rem;
+          cursor: pointer;
+          line-height: 2;
+          color: #777;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          b {
+            font-weight: normal;
+          }
+        }
+        ul {
+          position: absolute;
+          width: 100%;
+          top: 100%;
+          list-style: none;
+          padding-left: 0;
+          margin-bottom: 0;
+          z-index: 2;
+          background-color: #fff;
+          transform: scaleY(0);
+          transform-origin: top;
+          transition-duration: 0.2s;
+          li {
+            a {
+              color: #777;
+              padding: 5px 10px;
+              line-height: 2.5;
+              cursor: pointer;
+              display: block;
+              width: 100%;
+              text-decoration: none;
+              &:hover {
+                background-color: #679c56;
+                color: #fff;
+              }
+            }
+          }
+          &.active {
+            transform: scaleY(1);
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  header {
+    .head {
+      flex-wrap: wrap;
+      .logo {
+        flex: 0 0 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+        a {
+          max-width: 300px;
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+      ul.main_menu {
+        display: none;
+      }
+      ul.mobile_menu {
+        display: block;
       }
     }
   }

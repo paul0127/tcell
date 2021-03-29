@@ -4,6 +4,9 @@ import '../index.html'
 import '../css/owl.carousel.css'
 import '../js/object/owl.carousel.js'
 
+import '../js/object/menu.js'
+
+
 $(document).ready(function () {
   $('.banner_silder').owlCarousel({
     loop: true,

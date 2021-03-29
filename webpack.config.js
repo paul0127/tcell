@@ -3,7 +3,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var extractCSS = new ExtractTextPlugin('./css/[name].css')
 var CopyWebpackPlugin = require('copy-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
-var webpack = require('webpack');
+var webpack = require('webpack')
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -67,6 +67,18 @@ module.exports = {
         exclude: path.resolve('./node_modules'),
       },
       {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name][hash].[ext]',
+              outputPath: 'fonts/',
+            },
+          },
+        ],
+      },
+      {
         test: /\.css$/,
         use: extractCSS.extract(['css-loader', 'postcss-loader']),
         include: path.resolve('src/css'),
@@ -128,7 +140,7 @@ module.exports = {
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
-      'window.jQuery': 'jquery'
+      'window.jQuery': 'jquery',
     }),
   ],
 }
