@@ -1,10 +1,34 @@
 header {
-  display: flex;
-  justify-content: space-between;
   border-top: 20px solid #679c56;
-  ul.main_menu{
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    .logo a {
+      display: block;
+    }
+    ul.main_menu {
       display: flex;
       list-style: none;
       padding-left: 0;
+      margin-bottom: 0;
+      li {
+        height: 100%;
+        a {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          padding: 0 30px;
+          color: #056736;
+          font-weight: bold;
+          font-size: 1.25rem;
+          &:hover{
+            background-color: #679c56;
+            color: #fff;
+          }
+        }
+      }
+    }
   }
 }

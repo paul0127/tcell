@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/index.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首頁</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
     <header>
-        <div class="logo"><a href="#"><img src="./assets/img/logo.jpg"></a></div>
-        <ul class="main_menu">
+      <div class="container-fluid">
+        <div class="head">
+          <div class="logo">
+            <a href="#"><img src="./assets/img/logo.jpg" /></a>
+          </div>
+          <ul class="main_menu">
             <li><a hef="#">回到首頁</a></li>
             <li><a hef="#">寶家簡介</a></li>
             <li><a hef="#">產品資訊</a></li>
@@ -18,8 +22,30 @@
             <li><a hef="#">商品訂購</a></li>
             <li><a hef="#">聯絡我們</a></li>
             <li><a hef="#">會員登入</a></li>
-        </ul>
+          </ul>
+        </div>
+      </div>
     </header>
+    <section class="silder">
+      <div class="banner_silder owl-carousel owl-theme">
+        <div class="item">
+          <a href="#"><img src="./assets/img/home/58ca575dcf86c.jpg" /></a>
+        </div>
+        <div class="item">
+          <a href="#"><img src="./assets/img/home/58ca588e02dd8.jpg" /></a>
+        </div>
+      </div>
+    </section>
+    <div class="content">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-sm-3">
+                  <a href="#"></a>
+              </div>
+          </div>
+      </div>
+    </div>
+
     <script src="./js/index.js"></script>
-</body>
+  </body>
 </html>
