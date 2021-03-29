@@ -1,8 +1,2 @@
-body {
-  margin: 0;
-}
-div {
-  background-color: #ddd;
-  display: flex;
-  color: #333;
-}
+@import './object/common.scss';
+@import './object/header.scss'

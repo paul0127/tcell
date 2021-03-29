@@ -1,13 +1,13 @@
 module.exports = {
   plugins: [
     require('autoprefixer')({
-      browsers: [
+      grid: true,
+      overrideBrowserslist: [
         '> 1%',
         'last 5 versions',
-        'firefox >=45',
-        'ios >=8',
-        'Safari >=8',
-        'ie >= 10'
+        'Firefox >= 45',
+        'ios >= 8',
+        'ie >= 10',
       ],
     }),
   ],

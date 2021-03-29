@@ -1,0 +1,10 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  border-top: 20px solid #679c56;
+  ul.main_menu{
+      display: flex;
+      list-style: none;
+      padding-left: 0;
+  }
+}
