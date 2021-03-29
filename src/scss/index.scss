@@ -1,69 +1,8 @@
-@import './bootstrap/bootstrap.scss';
 @import './object/common.scss';
 @import './object/header.scss';
 @import './object/foot.scss';
-
-.silder {
-  margin-bottom: 2rem;
-  .banner_silder {
-    position: relative;
-    .owl-stage-outer {
-      margin-bottom: 1rem;
-    }
-    .owl-nav {
-      display: flex;
-      justify-content: center;
-      .owl-prev {
-        background-color: #a9abaa;
-        margin-right: 1rem;
-        padding: 0 10px !important;
-        border-radius: 10px;
-        span {
-          display: none;
-        }
-        &::before {
-          content: 'prev';
-          color: #fff;
-        }
-        &:hover {
-          background-color: #869791;
-        }
-      }
-      .owl-next {
-        background-color: #a9abaa;
-        padding: 0 10px !important;
-        border-radius: 10px;
-        span {
-          display: none;
-        }
-        &::before {
-          content: 'next';
-          color: #fff;
-        }
-        &:hover {
-          background-color: #869791;
-        }
-      }
-    }
-    .owl-dots {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      position: absolute;
-      bottom: 50px;
-      button {
-        width: 15px;
-        height: 15px;
-        background-color: #fff;
-        border-radius: 100%;
-        margin-right: 8px;
-        &.active {
-          background-color: #869791;
-        }
-      }
-    }
-  }
-}
+@import './object/silder.scss';
+@import './object/social.scss';
 
 .btn_list {
   margin-bottom: 1rem;
@@ -218,6 +157,9 @@
       margin-bottom: 0.5rem;
       justify-content: space-between;
       text-decoration: none;
+      b {
+        font-weight: normal;
+      }
       span {
         flex: 0 0 130px;
         text-align: right;
@@ -251,24 +193,4 @@
   }
 }
 
-.social {
-  margin-bottom: 1rem;
-  ul {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 0;
-    display: flex;
-    justify-content: center;
-    li {
-      margin-right: 1rem;
-      &:last-child {
-        margin-right: 0;
-      }
-      a {
-        &:hover {
-          opacity: 0.8;
-        }
-      }
-    }
-  }
-}
+

@@ -1,0 +1,21 @@
+.social {
+    margin-bottom: 1rem;
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: center;
+      li {
+        margin-right: 1rem;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }

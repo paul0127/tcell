@@ -1,7 +1,11 @@
+@import './bootstrap/bootstrap.scss';
 body {
   margin: 0;
 }
 a {
   text-decoration: none;
 }
-.content{max-width: 1700px;margin: 0 auto;}
+.content {
+  max-width: 1700px;
+  margin: 0 auto;
+}

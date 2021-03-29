@@ -9,6 +9,8 @@ module.exports = {
   context: path.resolve(__dirname, 'src'),
   entry: {
     index: 'index.js',
+    about: 'about.js',
+    product: 'product.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
