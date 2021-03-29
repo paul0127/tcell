@@ -1,0 +1,7 @@
+defaults
+> 1%
+last 5 versions
+firefox >=45
+ios >=8
+Safari >=8
+ie >= 10
